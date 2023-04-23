@@ -13,6 +13,9 @@
             //UC-3
             obj.Append(80);
             obj.Add(100);
+
+            //UC-4
+            obj.InsertMiddle(95, 30, 70);
             string list = obj.ToString();
             Console.WriteLine(list);
         }

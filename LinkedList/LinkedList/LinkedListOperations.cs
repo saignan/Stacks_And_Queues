@@ -64,6 +64,20 @@ namespace LinkedList
             t.next = n;
             return true;
         }
+        public void InsertMiddle(int data, int key,int key2)
+        {
+            Node t = head;
+            Node n = new Node(data);
+            while (t != null)
+            {
+                if (t.data.Equals(key) && t.next.data.Equals(key2))
+                {
+                    n.next = t.next;
+                    t.next = n;
+                }
+                t = t.next;
+            }
+        }
 
     }
 }
