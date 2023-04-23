@@ -9,10 +9,12 @@
             obj.Add(70);
             obj.Add(30);
             obj.Add(56);
-            string list= obj.ToString();
-            Console.WriteLine(list);
 
-           
+            //UC-3
+            obj.Append(80);
+            obj.Add(100);
+            string list = obj.ToString();
+            Console.WriteLine(list);
         }
     }
 }
