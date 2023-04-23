@@ -140,6 +140,26 @@ namespace LinkedList
             }
 
         }
+        public int Pop()
+        {
+            if (head == null)
+            {
+                throw new NullReferenceException("List is Empty");
+            }
+            Node t = head, p = head;
+            while (t.next != null)
+            {
+                p = t;
+                t = t.next;
+            }
+            int obj = t.data;
+            if (head.next == null)
+            {
+                head = null;
+            }
+            p.next = null;
+            return obj;
+        }
 
     }
 }
