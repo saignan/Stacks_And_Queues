@@ -37,6 +37,12 @@
             obj2.Enqueue(70);
 
 
+            //UceCase4
+            Console.WriteLine(obj2.Dequeue()); // prints 56
+            Console.WriteLine(obj2.Dequeue()); // prints 30
+            Console.WriteLine(obj2.Dequeue()); // prints 70
+
+
         }
     }
 }
