@@ -16,6 +16,8 @@
 
             
             obj.InsertMiddle(95, 30, 70);
+
+            obj.DeleteData(80);
             string list = obj.ToString();
             Console.WriteLine(list);
         }
