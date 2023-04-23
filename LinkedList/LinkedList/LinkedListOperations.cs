@@ -78,6 +78,19 @@ namespace LinkedList
                 t = t.next;
             }
         }
+        public bool Search(int data)
+        {
+            if (head == null)
+                throw new NullReferenceException("empty List");
+            Node t = head;
+            while (t != null)
+            {
+                if (t.data.Equals(data))
+                    return true;
+                t = t.next;
+            }
+            return false;
+        }
 
     }
 }
