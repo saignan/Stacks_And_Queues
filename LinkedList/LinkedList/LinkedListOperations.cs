@@ -91,6 +91,18 @@ namespace LinkedList
             }
             return false;
         }
+        public int Size()
+        {
+            if (head == null)
+                return 0;
+            Node t = head; int count = 0;
+            while (t != null)
+            {
+                count++;//4
+                t = t.next;
+            }
+            return count;
+        }
 
     }
 }
