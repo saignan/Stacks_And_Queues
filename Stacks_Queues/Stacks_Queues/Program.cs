@@ -21,8 +21,14 @@
             obj.Push(70);
             obj.Push(30);
             obj.Push(56);
-         
-            
+
+
+            //UseCase 2
+            while (!obj.IsEmpty())
+            {
+                Console.WriteLine(obj.Pop());
+            }
+
         }
     }
 }
