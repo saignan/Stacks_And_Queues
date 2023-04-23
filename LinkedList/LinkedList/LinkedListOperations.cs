@@ -91,6 +91,30 @@ namespace LinkedList
             }
             return false;
         }
+        public bool DeleteData(int input)
+        {
+            if (head == null)
+                return false;
+            if (head.next == null)
+                head = null;
+            Node t = head, pre = null;
+            while (t != null)
+            {
+                if (t.data == input)
+                {
+                    if (pre == null)
+                    {
+                        head = t.next;
+                        return true;
+                    }
+                    pre.next = t.next;
+                    return true;
+                }
+                pre = t;
+                t = t.next;
+            }
+            return false;
+        }
         public int Size()
         {
             if (head == null)
@@ -98,7 +122,7 @@ namespace LinkedList
             Node t = head; int count = 0;
             while (t != null)
             {
-                count++;//4
+                count++;
                 t = t.next;
             }
             return count;
