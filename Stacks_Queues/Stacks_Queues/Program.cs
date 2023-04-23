@@ -29,6 +29,14 @@
                 Console.WriteLine(obj.Pop());
             }
 
+
+            //UseCase 3
+            UC3 obj2 = new UC3();
+            obj2.Enqueue(56);
+            obj2.Enqueue(30);
+            obj2.Enqueue(70);
+
+
         }
     }
 }
