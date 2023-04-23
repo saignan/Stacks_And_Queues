@@ -127,6 +127,19 @@ namespace LinkedList
             }
             return count;
         }
+        public void DeleteFirstElement()
+        {
+            Node t = head;
+            if (t == null)
+            {
+                throw new NullReferenceException("list is empty");
+            }
+            else
+            {
+                head = t.next;
+            }
+
+        }
 
     }
 }
